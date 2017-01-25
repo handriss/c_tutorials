@@ -1,15 +1,27 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
     int a, b, c;
+    char ch;
 
-    printf("Enter two numbers to add\n");
-    scanf("%d%d",&a,&b);
+    while (1) {
+        printf("Inut two integers\n");
+        scanf("%d%d", &a, &b);
+        getchar();
 
-    c = a + b;
+        c = a + b;
 
-    printf("Sum of entered numbers = %d\n",c);
+        printf("(%d) + (%d) = (%d)\n", a, b, c);
+
+        printf("Do you wish to add more numbers (y/n)\n");
+        scanf("%c", &ch);
+
+        if (ch == 'y' || ch == 'Y')
+            continue;
+        else
+            break;
+    }
 
     return 0;
 }
