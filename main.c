@@ -3,7 +3,8 @@
 
 int main()
 {
-    printf("Hello world\nHello space");
+    char string[] = "Hello world!";
+    printf("%s\n", string);
     return 0;
 
 }
