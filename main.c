@@ -1,13 +1,13 @@
-//C hello world example
 #include <stdio.h>
-#define TRUE 1
 
-int main()
+int main ()
 {
-    char string[] = "Hello world!";
-    while(TRUE){
-        printf("%s\n", string);
-    }
-    return 0;
+    char n[1000];
 
+    printf("Input an integer\n");
+    scanf("%s", n);
+
+    printf("%s", n);
+
+    return 0;
 }
